@@ -1,0 +1,54 @@
+.navbar{
+    height: 50px;
+    
+    
+}
+
+
+.navbar a {
+  font-family: "Montserrat", sans-serif;
+  font-size: xx-small;
+  
+}
+
+.navbar a p{
+  font-family: "Montserrat", sans-serif;
+  font-size: x-small;
+  
+  
+  
+}
+.carousel-caption img{
+  position: absolute;top: 10px;
+}
+.carousel-caption p{
+  position: absolute;top: 15px;left: 70px;
+  font-family: "Montserrat", sans-serif;
+  font-size: x-small;
+}
+.carousel-caption .btn{
+  position: absolute;top: 30px;left: 85px;
+  font-family: "Montserrat", sans-serif;
+  font-size: xx-small;
+}
+#games p{
+  font-family: "Montserrat", sans-serif;
+  font-size: small;
+
+
+}
+#games .card p{
+  font-family: "Montserrat", sans-serif;
+  font-size: x-small;
+  
+
+
+}
+#challenge p{
+  font-family: "Montserrat", sans-serif;
+  font-size: x-small;
+}
+#challenge .btn{
+  font-family: "Montserrat", sans-serif;
+  font-size: x-small;
+}
