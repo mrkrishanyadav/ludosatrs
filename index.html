@@ -17,7 +17,7 @@
     <header>
   <nav class="navbar navbar-expand-lg bg-dark mb-5" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand border border-white lh-1 rounded-circle p-2" href="#"><i class="fa-solid fa-user "></i></a>
+    <a class="navbar-brand border border-white lh-1 rounded-circle p-2" href="#" id="showPopup"><i class="fa-solid fa-user " ></i></a>
 
     <a href="" class="navbar-brand text-center fw-bold " style="font-size: small;"><img src="battel.png" height="30px" width="30px" alt="">LUDO STARS</a>
 
@@ -82,20 +82,64 @@
       </div>
 
 </header>
+    <div class="overlay" id="overlay"></div>
+    <div class="slide-popup bg-dark" id="slidePopup">
+      <div class="container-fluid">
+        <div>
+        <img src="battel.png" width="60px" height="60px" alt="" class="border rounded-circle p-2 mt-4" style=" margin-left: 68px;">
+        <p class="mx-5 my-2 text-center" style="font-size: x-small;">Krishan</p>
+  
+        <p class="text-center" style="font-size: x-small;  margin-top: -9px;">mrkrishanyadav38@gmail.com</p>
+        <hr>
+          <div style="font-size: x-small;" class="mx-2" >
+          <i class="fa-solid fa-user border rounded-circle p-1" > </i> <span>My Profile</span><br><br>
+          <i class="fa-solid fa-user border rounded-circle p-1" > </i> <span>Kyc</span><br><br>
+          <i class="fa-solid fa-wallet border rounded-circle p-1" > </i> <span>Wallet</span><br><br>
+          <i class="fa-solid fa-user border rounded-circle p-1" > </i> <span>Deposit</span><br><br>
+
+          </div>
+        </div>
+
+
+      </div>
+      
+        <button class="close-btn" id="hidePopup"></button>
+        <p></p>
+    </div>
+<script>
+document.getElementById('showPopup').addEventListener('click', function() {
+    document.getElementById('slidePopup').style.left = '0'; // Slide in the pop-up
+    document.getElementById('overlay').style.display = 'block'; // Show the overlay
+});
+
+// Hide the pop-up and overlay
+document.getElementById('hidePopup').addEventListener('click', function() {
+    document.getElementById('slidePopup').style.left = '-300px'; // Slide out the pop-up
+    document.getElementById('overlay').style.display = 'none'; // Hide the overlay
+});
+
+// Hide the pop-up when clicking outside of it
+document.getElementById('overlay').addEventListener('click', function() {
+    document.getElementById('slidePopup').style.left = '-300px'; // Slide out the pop-up
+    document.getElementById('overlay').style.display = 'none'; // Hide the overlay
+});
+</script>
+
+
 
 
 <div class="container" id="games">
     <div class="mt-2 fw-bold"><p >Featured Games <i class='fas fa-dice'></i></p></div>
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-        <div class="card text-bg-dark">
+        <a href="classic.html"><div class="card text-bg-dark">
        <img src="game1.jpg" class="card-img opacity-75" alt="...">
       <div class="card-img-overlay">
     <h6 class="card-title">Classic Mode</h6>
     <p class="card-text">Two Players Game</p>
     
   </div>
-</div>
+</div></a>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-6">
         <div class="card text-bg-dark">
@@ -134,10 +178,10 @@
 </div>
 
 <div class="container" id="challenge">
-  <div class="mt-2 fw-bold">Recommended Challengs</div>
+  <div class="mt-2 fw-bold"><p>Recommended Challenges</p></div>
   <div class="row mt-3">
     <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-      <div class="border rounded-top border-bottom-0 lh-1 bg-dark">
+      <div class="border border-dark rounded-top bg-dark border-bottom-0 lh-1">
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-4 col-4">
           <img src="battel.png" width="50px" height="50px" alt="" class="border rounded-circle p-2 mt-2 mx-3">
@@ -145,8 +189,8 @@
 
        </div>
           <div class="col-lg-4 col-md-4 col-sm-4 col-4">
-            <p><button type="button" class="btn btn-info lh-1 mt-2 mx-4">Classic</button></p>
-            <p class="mx-3" >Challenge For <br><br><span class="mx-3 mt-2">₹ 300.0</span></p>
+            <p><button type="button" class="btn btn-info lh-1 mt-2 mx-2">Classic</button></p>
+            <p class="mx-1" >Challenge For <br><br><span class="mx-3 mt-2">₹ 300.0</span></p>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4 col-4">
           <img src="battel.png" width="50px" height="50px" alt="" class="border rounded-circle p-2 mt-2 mx-3">
@@ -171,7 +215,7 @@
 <div class="container" id="challenge">
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-      <div class="border rounded-bottom border-top-0 lh-1">
+      <div class="border border-dark rounded-bottom border-top-0 lh-1 bg-dark">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-6 col-6">
         
@@ -215,7 +259,7 @@
 
 
 
-    
+
 
 <footer>
     <nav class="navbar navbar-expand-lg bg-dark fixed-bottom" data-bs-theme="dark">
