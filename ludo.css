@@ -1,54 +1,157 @@
 .navbar{
-    height: 50px;
-    
-    
+  height: 50px;
+  
+  
 }
 
 
 .navbar a {
-  font-family: "Montserrat", sans-serif;
-  font-size: xx-small;
-  
+font-family: "Montserrat", sans-serif;
+font-size: xx-small;
+
 }
 
 .navbar a p{
-  font-family: "Montserrat", sans-serif;
-  font-size: x-small;
-  
-  
-  
+font-family: "Montserrat", sans-serif;
+font-size: x-small;
+
+
+
 }
 .carousel-caption img{
-  position: absolute;top: 10px;
+position: absolute;top: 10px;
 }
 .carousel-caption p{
-  position: absolute;top: 15px;left: 70px;
-  font-family: "Montserrat", sans-serif;
-  font-size: x-small;
+position: absolute;top: 15px;left: 70px;
+font-family: "Montserrat", sans-serif;
+font-size: x-small;
 }
 .carousel-caption .btn{
-  position: absolute;top: 30px;left: 85px;
-  font-family: "Montserrat", sans-serif;
-  font-size: xx-small;
+position: absolute;top: 30px;left: 85px;
+font-family: "Montserrat", sans-serif;
+font-size: xx-small;
 }
 #games p{
-  font-family: "Montserrat", sans-serif;
-  font-size: small;
+font-family: "Montserrat", sans-serif;
+font-size: small;
 
 
 }
 #games .card p{
-  font-family: "Montserrat", sans-serif;
-  font-size: x-small;
-  
+font-family: "Montserrat", sans-serif;
+font-size: x-small;
+
 
 
 }
 #challenge p{
-  font-family: "Montserrat", sans-serif;
-  font-size: x-small;
+font-family: "Montserrat", sans-serif;
+font-size: x-small;
 }
 #challenge .btn{
-  font-family: "Montserrat", sans-serif;
-  font-size: x-small;
+font-family: "Montserrat", sans-serif;
+font-size: x-small;
+}
+
+
+#popup {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+
+margin-top: 150px;
+}
+
+.popup-content {
+background: linear-gradient(#ddc7e6,#ffffff);
+
+ margin: 15% auto;
+border: 1px solid #888;
+width: 80%; 
+border-radius: 10px;
+border: none;
+
+background-color: white;color: black;
+}
+
+.close-btn {
+color: #aaa;
+float: right;
+/* font-size: xx-small; */
+font-weight: bold;
+display: none;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+.navbar .pop button{
+font-size: xx-small;
+
+
+}
+.navbar .pop p{
+font-size: xx-small;
+color: black;
+font-family: "Montserrat", sans-serif;
+
+}
+
+/* 2and popup */
+
+.overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+display: none; /* Initially hidden */
+z-index: 999; /* Below the pop-up but above other content */
+}
+
+.slide-popup {
+position: fixed;
+top: 0;
+left: -300px; /* Start off-screen */
+width: 220px;
+height: 100%;
+background-color: lightcoral;
+color: white;
+display: flex;
+flex-direction: column;
+
+transition: left 0.3s ease-in-out;
+z-index: 1000; /* Ensure it is above the overlay */
+}
+
+.slide-popup p {
+margin: 20px 0;
+}
+
+#showPopup {
+
+cursor: pointer;
+}
+
+.close-btn {
+position: absolute;
+top: 20px;
+right: 20px;
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+background-color: darkred;
+border: none;
+color: white;
+border-radius: 5px;
+
 }
