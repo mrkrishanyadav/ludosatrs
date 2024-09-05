@@ -37,7 +37,7 @@
                 <div class="carousel-caption text-start text-white " >
                   <img src="refer.png" height="50px" width="50px" alt="">
                   <p>Refer & Earn ₹50 Bonus</p>
-                  <button type="button" class="btn btn-success lh-1">Get Bonus</button>
+                  <a href="refer.html"><button type="button" class="btn btn-success lh-1">Get Bonus</button></a>
                 
                    
                     
@@ -50,7 +50,7 @@
          <div class="text-white">
          <!-- <img src="battel.png" height="50px" width="50px" alt="" > -->
                   <p>Frist Battle Play For Free</p>
-                  <button type="button" class="btn btn-success lh-1">Play Free</button>
+                  <a href="classic.html"><button type="button" class="btn btn-success lh-1">Play Free</button></a>
                
 
 
@@ -89,13 +89,27 @@
         <img src="battel.png" width="60px" height="60px" alt="" class="border rounded-circle p-2 mt-4" style=" margin-left: 68px;">
         <p class="mx-5 my-2 text-center" style="font-size: x-small;">Krishan</p>
   
-        <p class="text-center" style="font-size: x-small;  margin-top: -9px;">mrkrishanyadav38@gmail.com</p>
+        <p class="text-center" style="font-size: small;  margin-top: -9px;">mrkrishanyadav38@gmail.com</p>
         <hr>
           <div style="font-size: x-small;" class="mx-2" >
-          <i class="fa-solid fa-user border rounded-circle p-1" > </i> <span>My Profile</span><br><br>
-          <i class="fa-solid fa-user border rounded-circle p-1" > </i> <span>Kyc</span><br><br>
-          <i class="fa-solid fa-wallet border rounded-circle p-1" > </i> <span>Wallet</span><br><br>
-          <i class="fa-solid fa-user border rounded-circle p-1" > </i> <span>Deposit</span><br><br>
+          <a href="ludo.html" ><i class="fa-solid fa-user  p-1" > </i> <span>My Profile</span></a><br><br>
+          <a href=""><i class="fa-regular fa-circle-check p-1"></i> <span>Kyc</span></a><br><br>
+          <a href=""><i class="fa-solid fa-wallet p-1" > </i> <span>Wallet & Voucher</span></a><br><br>
+          <a href=""><i class="fa-solid fa-chart-line p-1"></i> <span>Leaderboard</span></a><br><br>
+          <a href=""><i class="fa-solid fa-plus p-1"></i><span>Add money</span></a><br><br>
+          <a href="refer.html"><i class="fa-solid fa-users p-1"></i> <span>My referrals</span></a><br><br>
+          <a href=""><i class="fa-solid fa-money-bill-transfer p-1"></i> <span>Status</span></a><br><br>
+          <a href=""><i class="fa-solid fa-handshake p-1"></i> <span>Responsiblity</span></a><br><br>
+          <a href=""><i class="fa-solid fa-gear p-1"></i> <span>Setting</span></a><br>
+
+          </div>
+          <hr>
+          Social Media
+          <div style="font-size: x-small;" class="mx-2 mt-3">
+          <a href="instagram.com"><i class="fa-brands fa-instagram p-1"></i> <span>Instagram</span></a><br><br>
+          <a href="telegram.com"><i class="fa-brands fa-telegram p-1"></i> <span>Telegram</span></a><br><br>
+          <a href="youtube.com"><i class="fa-brands fa-youtube p-1"></i> <span>Youtube</span></a><br><br>
+            
 
           </div>
         </div>
@@ -124,9 +138,7 @@ document.getElementById('overlay').addEventListener('click', function() {
     document.getElementById('overlay').style.display = 'none'; // Hide the overlay
 });
 </script>
-
-
-
+<?php include"header.php" ?>
 
 <div class="container" id="games">
     <div class="mt-2 fw-bold"><p >Featured Games <i class='fas fa-dice'></i></p></div>
@@ -142,25 +154,26 @@ document.getElementById('overlay').addEventListener('click', function() {
 </div></a>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-        <div class="card text-bg-dark">
+       <a href="multiplayer.html"> <div class="card text-bg-dark">
        <img src="game3.jpg"  class="card-img opacity-75" alt="...">
       <div class="card-img-overlay">
     <h6 class="card-title">Multi Mode</h6>
     <p class="card-text">Four Players Game</p>
     
   </div>
-</div>
+</div></a>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-6 mt-3">
-        <div class="card text-bg-dark">
+        <a href="towwinner.html"><div class="card text-bg-dark">
        <img src="game2.jpg" class="card-img opacity-75" alt="...">
       <div class="card-img-overlay">
     <h6 class="card-title">Multi Winners</h6>
     <p class="card-text">Tow Players Win </p>
     
   </div>
-</div>
-        </div>  <div class="col-lg-6 col-md-6 col-sm-6 col-6 mt-3">
+</div></a>
+        </div> 
+         <div class="col-lg-6 col-md-6 col-sm-6 col-6 mt-3">
         <div class="card text-bg-dark">
        <img src="game5.png" class="card-img opacity-75" alt="...">
       <div class="card-img-overlay">
@@ -260,36 +273,37 @@ document.getElementById('overlay').addEventListener('click', function() {
 
 
 
+    
 
 <footer>
-    <nav class="navbar navbar-expand-lg bg-dark fixed-bottom" data-bs-theme="dark">
-        <div class="container">
-            <div class="row">
+  <nav class="navbar navbar-expand-lg bg-dark fixed-bottom" data-bs-theme="dark">
+      <div class="container">
+          <div class="row">
 
 
 
-            </div>
-            <a class="navbar-brand fs-6 " href="#"><i class="fa-solid fa-house mx-2" style="padding-left: 12px;"></i>
-                <p style="padding-left: 14px;">Home</p>
-            </a>
-            <a class="navbar-brand fs-6" href="#"><i class="fa-solid fa-bullhorn" style="margin-left: 20px;"></i>
-                <p>Refer & earn</p>
-            </a>
-            <a class="navbar-brand fs-1 " href="#"><i class="fa-solid fa-plus"></i>
-                <p></p>
-            </a>
-            <a class="navbar-brand fs-6" href="#"><i class="fa-solid fa-wallet" style="margin-left: 12px;"></i>
-                <p>Add Cash</p>
-            </a>
-            <a class="navbar-brand fs-6" href="#"><i class="fa-solid fa-bars" style="margin-left: 13px;"></i>
-                <p style="padding-left: 6px;">More</p>
-            </a>
+          </div>
+          <a class="navbar-brand fs-6 " href="ludo.html"><i class="fa-solid fa-house mx-2" style="padding-left: 12px;"></i>
+              <p style="padding-left: 14px;">Home</p>
+          </a>
+          <a class="navbar-brand fs-6" href="refer.html"><i class="fa-solid fa-bullhorn" style="margin-left: 20px;"></i>
+              <p>Refer & earn</p>
+          </a>
+          <a class="navbar-brand fs-1 " href="#"><i class="fa-solid fa-plus"></i>
+              <p></p>
+          </a>
+          <a class="navbar-brand fs-6" href="#"><i class="fa-solid fa-wallet" style="margin-left: 12px;"></i>
+              <p>Add Cash</p>
+          </a>
+          <a class="navbar-brand fs-6" href="" id="showPopup"><i class="fa-solid fa-bars" style="margin-left: 13px;"></i>
+              <p style="padding-left: 6px;">More</p>
+          </a>
 
-        </div>
+      </div>
 
 
 
-    </nav>
+  </nav>
 
 
 </footer>
