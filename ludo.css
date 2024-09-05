@@ -129,6 +129,7 @@ color: white;
 display: flex;
 flex-direction: column;
 
+
 transition: left 0.3s ease-in-out;
 z-index: 1000; /* Ensure it is above the overlay */
 }
@@ -154,4 +155,9 @@ border: none;
 color: white;
 border-radius: 5px;
 
+}
+
+.slide-popup a{
+text-decoration: none;
+color: white;
 }
