@@ -308,6 +308,26 @@ document.getElementById('overlay').addEventListener('click', function() {
 
 </footer>
 
+<audio id="pageSound" src="games.mp3" preload="auto" loop autoplay></audio>
+
+<script>
+        window.onload = function() {
+            var pageSound = document.getElementById('pageSound');
+            pageSound.play().catch(function(error) {
+                console.log("Audio playback failed: ", error);
+            });
+        };
+    </script> <audio id="pageSound" src="games.mp3" preload="auto" loop autoplay></audio>
+
+<script>
+        window.onload = function() {
+            var pageSound = document.getElementById('pageSound');
+            pageSound.play().catch(function(error) {
+                console.log("Audio playback failed: ", error);
+            });
+        };
+    </script>
+
 
 </body>
 
